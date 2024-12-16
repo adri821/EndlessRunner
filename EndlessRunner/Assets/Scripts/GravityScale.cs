@@ -10,6 +10,6 @@ public class GravityScale : MonoBehaviour
     }
 
     void FixedUpdate() {
-        rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);//It has to be FixedUpdate, because it applies force to the rigidbody constantly.
+        rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
     }
 }

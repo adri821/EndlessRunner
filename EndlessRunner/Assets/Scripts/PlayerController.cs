@@ -23,7 +23,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) {
         // Detener el tiempo si colisiona con un objeto con la etiqueta "Enemy" o "Ground"
-        if (collision.collider.CompareTag("Enemy") || collision.collider.CompareTag("Ground")) {
+        if (collision.collider.CompareTag("Body") 
+            //|| collision.collider.CompareTag("Ground")
+            ) {
             Time.timeScale = 0;
         }
     }
